@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.institutoserpis.practicaedfinal.practicafinal">
+
+    <TextView
+        android:id="@+id/textoinicial"
+        android:layout_width="420dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_blue_light"
+        android:fontFamily="monospace"
+        android:text="Calculadora sencilla OscarGimenez"
+        android:textAlignment="center"
+        android:textColorLink="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/numero1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/numero1"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/numero1"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:inputType="number"
+        android:hint="primer numero"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="56dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:inputType="number"
+        android:hint="segundo numero"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="96dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/resultado"
+        android:layout_marginStart="26dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/numero2">
+
+        <Button
+            android:id="@+id/suma"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="+"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="152dp" />
+
+        <Button
+            android:id="@+id/resta"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="-"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="152dp" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="/"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="257dp" />
+
+        <Button
+            android:id="@+id/mult"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="x"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="257dp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:hint="RESULTADO"
+        android:gravity="center"
+        android:textSize="30sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="217dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>
